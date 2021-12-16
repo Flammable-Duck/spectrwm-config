@@ -1,3 +1,3 @@
 My Spectrwm config.
 
-![./screenshot.png]()
+![](./screenshot.png)
