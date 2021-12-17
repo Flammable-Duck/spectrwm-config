@@ -15,7 +15,12 @@ player() {
 }
 
 volume() {
-    pamixer --get-volume
+    if [ "$(pamixer --get-mute)" = "true" ]; then
+        echo 'M'
+    else
+        echo $(pamixer --get-volume)
+    fi
+
 }
 
 bat_per() {
