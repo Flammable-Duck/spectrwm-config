@@ -8,7 +8,7 @@ player() {
     if [ "$player_status" = "Playing" ]; then
         echo " $(playerctl metadata --player=%any,firefox,chromium --format '{{artist}} - {{title}}')"
     elif [ "$player_status" = "Paused" ]; then
-        echo " $(playerctl metadata --player=%any,firefox,chromium --format '  {{artist}} - {{title}}')"
+        echo " $(playerctl metadata --player=%any,firefox,chromium --format 'Paused | {{artist}} - {{title}}')"
     else
         echo ""
     fi
